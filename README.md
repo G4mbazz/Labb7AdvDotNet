@@ -6,7 +6,7 @@ Test 1, Addition
 4, Press enter
 5, Enter the second number (8)
 6, Press enter
-7, The application shows the result (15)
+7, The application shows the result (7 + 8 = 15)
 8, The application returns to the menu
 
 Test 2, Subtraction 
@@ -16,7 +16,7 @@ Test 2, Subtraction
 4, Press enter
 5, Enter the second number (8)
 6, Press enter
-7, The application shows the result (15)
+7, The application shows the result (23 - 8 = 15)
 8, The application returns to the menu
 
 Test 3, Multiplication 
@@ -26,6 +26,6 @@ Test 3, Multiplication
 4, Press enter
 5, Enter the second number (5)
 6, Press enter
-7, The application shows the result (15)
+7, The application shows the result (3 * 5 = 15)
 8, The application returns to the menu
 
