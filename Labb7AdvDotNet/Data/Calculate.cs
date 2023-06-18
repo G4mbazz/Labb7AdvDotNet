@@ -10,18 +10,24 @@ namespace Labb7AdvDotNet.Data
     {
         public static string Addition(Tuple<float, float> toCalc)
         {
-            float awnser = toCalc.Item1 + toCalc.Item2;
-            return $"{toCalc.Item1} + {toCalc.Item2} = {awnser}";
+            float answer = toCalc.Item1 + toCalc.Item2;
+            return $"{toCalc.Item1} + {toCalc.Item2} = {answer:n2}";
         }
         public static string Subtraction(Tuple<float, float> toCalc)
         {
-            float awnser = toCalc.Item1 - toCalc.Item2;
-            return $"{toCalc.Item1} - {toCalc.Item2} = {awnser}";
+            float answer = toCalc.Item1 - toCalc.Item2;
+            return $"{toCalc.Item1} - {toCalc.Item2} = {answer:n2}";
         }
         public static string Multiplication(Tuple<float, float> toCalc)
         {
-            float awnser = toCalc.Item1 * toCalc.Item2;
-            return $"{toCalc.Item1} * {toCalc.Item2} = {awnser}";
+            float answer = toCalc.Item1 * toCalc.Item2;
+            return $"{toCalc.Item1} * {toCalc.Item2} = {answer:n2}";
+        }
+        public static string Division(Tuple<float, float> toCalc)
+        {
+            float answer = toCalc.Item1 / toCalc.Item2;
+            return $"{toCalc.Item1} / {toCalc.Item2} = {answer:n2}";
+
         }
 
     }

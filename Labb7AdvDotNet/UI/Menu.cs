@@ -1,9 +1,4 @@
 ﻿using Labb7AdvDotNet.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Labb7AdvDotNet.UI
 {
@@ -16,8 +11,8 @@ namespace Labb7AdvDotNet.UI
             while (loop)
             {
                 Console.WriteLine("Calculator\n\nPlease select a menu choice from below\n" +
-                    "1. Addition\n2. Subtraction\n3. Multiplication\n4. Show previous calculations" +
-                    "\n5. Clear Window\n6. Exit");
+                    "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division" +
+                    "\n5. Show Previous Calculations \n6. Clear Window\n7. Exit");
                 switch (Input.MenuInput())
                 {
                     case 1:
@@ -30,12 +25,15 @@ namespace Labb7AdvDotNet.UI
                         SaveAndDisplay(Calculate.Multiplication(Input.CalcInput()));
                         break;
                     case 4:
-                        DisplayAll();
+                        SaveAndDisplay(Calculate.Division(Input.CalcInput()));
                         break;
                     case 5:
-                        Console.Clear();
+                        DisplayAll();
                         break;
                     case 6:
+                        Console.Clear();
+                        break;
+                    case 7:
                         loop = false;
                         break;
                     default:
